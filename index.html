@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe game</title>
+    <link rel="stylesheet" href="./css/design.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="begin">
+
+            <div class="header_logo_cont">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" class="size-6 circle">
+                    <path fill-rule="evenodd"
+                        d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" class="ecs" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <button class="turn"> X TURN</button>
+            <button class="redo"> REV</button>
+        </header>
+        <div class="game_container">
+            <div class="grid-container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+                <div class="item">9</div>
+            </div>
+
+        </div>
+        <div class="game_results">
+            <div class="res_item x">
+                <span>X <br> 14</span>
+
+            </div>
+            <div class="res_item t">
+                <span>Ties <br> 32</span>
+
+            </div>
+            <div class="res_item cpu">
+                <span>CPU<BR>0 </BR></span>
+            </div>
+        </div>
+        <div class="modal hidden" id="modal">
+            <div class="modal_content">
+                <h2>YOU WON!</h2>
+                <span>X TAKES THE ROUND</span>
+                <div class="mod_buttons">
+                    <button class="quit">QUIT</button>
+                    <button class="next" id="next">NEXT ROUND</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal_inicio">
+            <div class="m_content ">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" class="size-6 circle">
+                        <path fill-rule="evenodd"
+                            d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" class="ecs" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="selector_container">
+                    <h1>PICK PLAYER 1`S MARK</h1>
+                    <div class="choose_buttons">
+                   <button class="x">X</button>
+                   <button class="o">O</button>
+                    </div>
+                    <h2>REMEMBER: X GOES FIRST</h2>
+                </div>
+                <div class="buttons_game">
+                   <button class="ngc">NEW GAME (VS CPU)</button>
+                   <button class="ngp">NEW GAME (VS PLAYER)</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

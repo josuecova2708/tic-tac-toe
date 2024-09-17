@@ -1,0 +1,234 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+     display: flex;
+     flex-direction: column; 
+     background-color: #192A32;  
+    }
+    .begin{
+     width: 100%;
+     height: 20%;
+       
+     display: flex;
+     flex-direction: row;
+     gap: 80px;     
+     justify-content: center;
+     align-items: center;
+     padding-right: 40px;
+     
+    }
+    .header_logo_cont{
+        width: 80px;
+        display: flex;
+       height: 80px;
+       justify-content: center;
+      align-items: center;       
+    }
+    .header_logo_cont svg{
+     height: 50%;
+     width: 50%
+    }
+    .begin button{
+         
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+    .turn{
+        background-color: #1F3540;
+        width: 100px;
+        height: 40px;
+    }
+    .redo{
+        background-color: #A8BEC9;   
+        height: 40px;
+        width: 40px;
+    }
+    
+    .game_container{
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual ancho */
+        grid-template-rows: repeat(3, 1fr);    /* Crea 3 filas de igual altura */
+        gap: 10px;  
+        width: 400px; 
+        height: 400px; 
+      }
+      
+      .item {
+        background-color: #1F3540;
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        font-size: 24px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      }
+
+    .game_results{
+        width: 100%;
+        height: 20%; 
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+     align-items: center;
+    }
+    .res_item{
+      width: 120px;
+      height: 70px;
+      color:black;
+      text-align: center; 
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+    .res_item span{
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+     .x{
+        background-color: #31C4BE;
+     }
+     .t{
+        background-color: #A8BEC9;
+     }
+     .cpu{
+        background-color: #F2B237;
+     }
+     .modal{
+    position: absolute ;
+    width: 100% ;
+    height: 100%;
+    background-color: rgba(30, 28, 28, 0.364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .modal_content{
+   display: flex;
+   flex-direction: column;
+    background-color: #1F3540;
+   width: 100%;
+   height: 250px;
+   align-items: center;
+   gap: 20px;
+   justify-content: center;
+}
+.modal_content span{
+    color:#31C4BE;
+    font-size: 22px;
+}
+.mod_buttons{
+width: 200px;
+display: flex;
+gap: 10px;
+height: 40px;
+justify-content: center
+
+}
+.quit{
+   font-weight: bold;
+    background-color: #A8BEC9;
+    width: 50px;
+}
+.next{
+    font-weight: bold;
+    background-color: #F2B237;
+    width: 100px;
+}
+.hidden{
+    display: none;
+}
+.modal_inicio{
+    position: absolute ;
+    width: 100% ;
+    height: 100%;
+    background-color: #1F3540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .m_content{
+   display: flex;
+   flex-direction: column; 
+  }
+  .logo{
+    width: 100%;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}
+.logo svg{
+    width: 60px;
+}
+.selector_container{
+    width: 450px;
+    height: 250px;
+    background-color: #192A32; 
+}
+.selector_container h1{
+    color: #A8BEC9;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 15px;
+}
+.selector_container h2{
+    color: #a8bec94a;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.choose_buttons{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #081217;
+    border-radius: 10px;
+   margin-top: 10px;
+   
+}
+.choose_buttons button{
+    width: 200px;
+    height: 90px;
+    align-items: center;
+    align-self: center;
+    font-size: 40px;
+    background-color: #A8BEC9;
+    padding: 5px;
+}
+.buttons_game{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+.buttons_game button{
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ngc{
+    background-color: #F2B237;
+}
+.ngp{
+    background-color:#31C4BE;
+}
