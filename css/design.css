@@ -29,17 +29,21 @@ font-family: Arial, Helvetica, sans-serif;
         display: flex;
        height: 80px;
        justify-content: center;
-      align-items: center;       
+      align-items: center;
+      gap: 10px ;
+       
     }
     .header_logo_cont svg{
-     height: 50%;
-     width: 50%
+     height: 70%;
+     width: 70%;
     }
     .begin button{
          
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
+     /* svg X */
+    
     .turn{
         background-color: #1F3540;
         width: 100px;
@@ -161,6 +165,7 @@ justify-content: center
     justify-content: center;
     align-items: center;
     display: none;
+    
   }
   .m_content{
    display: flex;
@@ -213,6 +218,14 @@ justify-content: center
     background-color: #A8BEC9;
     padding: 5px;
 }
+.choose_buttons button:hover{
+    background-color: white;
+}
+.choose_buttons button:active{
+    background-color: rgb(6, 6, 55)
+}
+
+
 .buttons_game{
     width: 100%;
     height: 200px;
